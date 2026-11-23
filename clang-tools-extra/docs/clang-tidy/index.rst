@@ -92,6 +92,7 @@ Name prefix            Description
                        don't relate to any particular coding style.
 ``readability-``       Checks that target readability-related issues that
                        don't relate to any particular coding style.
+``tinylint-``          Checks specific to TinyLint.
 ====================== ========================================================
 
 Clang diagnostics are treated in a similar way as check diagnostics. Clang
