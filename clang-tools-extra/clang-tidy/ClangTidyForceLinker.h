@@ -132,6 +132,11 @@ extern volatile int ReadabilityModuleAnchorSource;
 [[maybe_unused]] static int ReadabilityModuleAnchorDestination =
     ReadabilityModuleAnchorSource;
 
+// This anchor is used to force the linker to link the TinyLintModule.
+extern volatile int TinyLintModuleAnchorSource;
+[[maybe_unused]] static int TinyLintModuleAnchorDestination =
+    TinyLintModuleAnchorSource;
+
 } // namespace clang::tidy
 
 #endif

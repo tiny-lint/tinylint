@@ -349,6 +349,11 @@ clang_tidy_library(
     deps = [":lib"],
 )
 
+clang_tidy_library(
+    name = "tinylint",
+    deps = [":lib"],
+)
+
 CHECKS = [
     ":abseil",
     ":altera",
@@ -371,6 +376,7 @@ CHECKS = [
     ":performance",
     ":portability",
     ":readability",
+    ":tinylint",
 ] + select({
     ":static_analyzer_enabled": [":mpi"],
     "//conditions:default": [],
